@@ -66,7 +66,7 @@ The cleaned dataset was used to create an **interactive Power BI dashboard**, hi
 ---
 ## 🖼 Dashboard Preview
 
-![Power BI Dashboard Preview](project.png)
+![Power BI Dashboard Preview](project2.png)
 
 
 ## 🛠 Tools & Technologies Used
