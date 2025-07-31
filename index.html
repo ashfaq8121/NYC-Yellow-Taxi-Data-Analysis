@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NYC Yellow Taxi Data Analysis</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
+      margin: 0;
+      padding: 40px;
+      color: #333;
+    }
+    .container {
+      max-width: 850px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+    }
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 20px;
+      background-color: #007acc;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    ul {
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🚖 NYC Yellow Taxi Data Analysis (Jan 2022)</h1>
+    <p>This project cleans and analyzes NYC Yellow Taxi trip data using <strong>Python</strong> and presents business insights through <strong>Power BI</strong>.</p>
+
+    <h3>📷 Dashboard Preview</h3>
+    <img src="project2.png" alt="Power BI Dashboard">
+
+    <h3>🧹 Data Cleaning Summary (Python)</h3>
+    <ul>
+      <li><strong>RatecodeID:</strong> Replaced 99 and nulls with 1 (Standard Rate)</li>
+      <li><strong>store_and_fwd_flag:</strong> Filled nulls with 'N'</li>
+      <li><strong>airport_fee:</strong> Replaced -1.25 with 1.25, nulls with 0.0</li>
+      <li><strong>congestion_surcharge:</strong> Replaced -2.5 with 2.5, nulls with 2.3</li>
+      <li><strong>passenger_count:</strong> Filled missing values with 1</li>
+    </ul>
+
+    <h3>📊 Key Insights from Power BI</h3>
+    <ul>
+      <li>Top fare types: Standard Rate dominates</li>
+      <li>Credit card is the most common payment method</li>
+      <li>Monthly trip distances are clearly visualized</li>
+      <li>Pickup/Dropoff locations distribution</li>
+      <li>Passenger counts and total amount breakdown</li>
+    </ul>
+
+    <h3>📁 Files</h3>
+    <ul>
+      <li><a href="yellow_tripdata_2022-01.parquet" download>Download Original Dataset (.parquet)</a></li>
+      <li><a href="cleaned_yellow_tripdata.xlsx" download>Download Cleaned Dataset (.xlsx)</a></li>
+      <li><a href="python.py" download>Download Python Script (.py)</a></li>
+      <li><a href="project2.pbix" download>Download Power BI Dashboard (.pbix)</a></li>
+    </ul>
+
+    <p><strong>Note:</strong> Open <code>project2.pbix</code> in Power BI Desktop to view the full dashboard.</p>
+
+      <a href="https://github.com/ashfaq8121/nyc-yellow-taxi-analysis" class="button" target="_blank">🔗 View on GitHub</a>
+
+    <p style="margin-top: 30px;">📌 Created by <strong>Mohammad Ashfaq Ur Rahman</strong></p>
+  </div>
+</body>
+</html>
